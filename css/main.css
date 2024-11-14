@@ -6771,3 +6771,10 @@ img[data-fancybox],
 a[data-fancybox] {
   cursor: zoom-in;
 }
+.cmt-body.utterances {
+  margin: 0 -4px;
+  width: calc(100% + 8px);
+}
+.related-wrap#comments .cmt-body svg.loading {
+  top: 62px;
+}

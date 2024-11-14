@@ -135,6 +135,22 @@
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">接下來閱讀</div><a href="/explore/notes/%E6%8E%A2%E7%B4%A2%E8%80%85%E7%AD%86%E8%A8%98.html">探索者筆記</a></div></section></div>
 
 
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>Comments</p>
+
+      <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/assets/images/keyboard.jpg" alt="描述" style="margin-left: 10px; height: 50px;">
+    </section>
+    <section class='body cmt-body utterances'>
+      
+
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="utterances" repo="nepail/nepail.github.io" issue-term="pathname" theme="boxy-light"></div>
+
+    </section>
+  </div>
+
 
 
 <footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">Blog</span><a href="/">近期</a><a href="/categories/">分類</a><a href="/tags/">標籤</a><a href="/topic/">專欄</a><a href="/archives/">歸檔</a></div><div class="sitemap-group"><span class="fs15">探索</span><a href="/explore/sites/%E5%B7%A5%E5%85%B7%E5%BA%AB.html">網站</a><a href="/explore/notes/%E6%8E%A2%E7%B4%A2%E8%80%85%E7%AD%86%E8%A8%98.html">筆記</a></div><div class="sitemap-group"><span class="fs15">友情連結</span><a href="/about/">朋友圈</a></div></div><div class="text"><div class="totalcount" style="text-align:center"></span><span class="post-count"></div></div></footer>
@@ -461,6 +477,31 @@
 
 
 <!-- optional -->
+
+  <script type="module">
+  const el = document.querySelector("#comments #utterances");
+  util.viewportLazyload(el, load_utterances, false);
+
+  function load_utterances() {
+    if (!el) return;
+    try {
+      el.innerHTML = '';
+    } catch (error) {
+      console.error(error);
+    }
+    const script = document.createElement('script');
+    script.src = 'https://utteranc.es/client.js';
+    script.async = true;
+    for (const key of Object.keys(el.attributes)) {
+      const attr = el.attributes[key];
+      if (['class', 'id'].includes(attr.name) === false) {
+        script.setAttribute(attr.name, attr.value);
+      }
+    }
+    el.appendChild(script);
+  }
+</script>
+
 
 
 
