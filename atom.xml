@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Nepail&#39;s Blog</title>
+  
+  <subtitle>Nepail&#39;s Blog</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-11-14T02:27:24.607Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>About me</title>
+    <link href="http://example.com/posts/1.html"/>
+    <id>http://example.com/posts/1.html</id>
+    <published>2024-11-14T04:38:23.000Z</published>
+    <updated>2024-11-14T02:27:24.607Z</updated>
+    
+    <content type="html"><![CDATA[<p>沒什麼好說的，就說 Hellow World 吧</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;沒什麼好說的，就說 Hellow World 吧&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="TEST" scheme="http://example.com/categories/TEST/"/>
+    
+    
+  </entry>
+  
+</feed>
