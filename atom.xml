@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-11-14T02:27:24.607Z</updated>
+  <updated>2024-11-14T08:54:56.473Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>dotnet指令</title>
+    <link href="http://example.com/posts/2.html"/>
+    <id>http://example.com/posts/2.html</id>
+    <published>2024-11-14T08:37:16.000Z</published>
+    <updated>2024-11-14T08:54:56.473Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="新建API專案"><a href="#新建API專案" class="headerlink" title="新建API專案"></a>新建API專案</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs charp">dotnet new webapi -n dotnetapitest<br></code></pre></td></tr></table></figure><h4 id="發佈"><a href="#發佈" class="headerlink" title="發佈"></a>發佈</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs charp">dotnet publish -c Release --self-contained -r wind-x64<br></code></pre></td></tr></table></figure><ul><li><p><code>-p:PublishSingleFile=true</code> 表示自包</p></li><li><p><code>-p:PublishTrimmed=true</code> 修剪</p></li></ul><h4 id="啟動它-Windows"><a href="#啟動它-Windows" class="headerlink" title="啟動它!(Windows)"></a>啟動它!(Windows)</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs charp">.\bin\Release\net8.0\win-x64\publish\dotnetapitest.exe<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">應該會常使用的指令，避免忘記</summary>
+    
+    
+    
+    <category term="指令" scheme="http://example.com/categories/%E6%8C%87%E4%BB%A4/"/>
+    
+    
+    <category term="dotnet" scheme="http://example.com/tags/dotnet/"/>
+    
+  </entry>
   
   <entry>
     <title>About me</title>
